@@ -16,7 +16,7 @@ function ForgotPassword() {
         }
       );
       setMessage(response.data.message);
-      window.location.href = "/changepassword";
+      window.location.href = "/";
       alert("Email Sent to Your Registered Email");
       setEmail("");
     } catch (err) {
