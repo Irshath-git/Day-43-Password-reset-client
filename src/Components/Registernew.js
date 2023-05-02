@@ -109,7 +109,7 @@ function Registernew() {
               />
             </div>
           </form>
-          <Link class="" to="/login" data-test="Link">
+          <Link class="" to="/" data-test="Link">
             <span class="block  p-5 text-center text-gray-800  text-md ">
               Already have an account?
             </span>
