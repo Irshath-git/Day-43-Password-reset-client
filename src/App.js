@@ -1,11 +1,10 @@
 import "./App.css";
-import Login from "./Components/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "./Components/Register";
 import ForgotPassword from "./Components/ForgotPassword";
 import ChangePassword from "./Components/ChangePassword";
 import Loginnew from "./Components/Loginnew";
 import Registernew from "./Components/Registernew";
+import MainComponent from "./Components/MainComponent";
 
 function App() {
   return (
@@ -13,12 +12,11 @@ function App() {
       {/* <Login /> */}
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Login />} /> */}
           <Route path="/" element={<Loginnew />} />
-          {/* <Route path="/register" element={<Register />} /> */}
           <Route path="/register" element={<Registernew />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/changepassword" element={<ChangePassword />} />
+          <Route path="/main" element={<MainComponent />} />
         </Routes>
       </BrowserRouter>
     </div>

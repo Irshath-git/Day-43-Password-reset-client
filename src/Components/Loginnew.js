@@ -30,7 +30,7 @@ function Loginnew() {
       );
       localStorage.setItem("token", response.data.token);
       setMessage("");
-      window.location.href = "/";
+      window.location.href = "/main";
     } catch (err) {
       setMessage(err.response.data.message);
     }
