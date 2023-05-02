@@ -68,7 +68,7 @@ function ForgotPassword() {
                     <button
                       class="w-full px-4 py-2 font-bold text-white bg-red-500 rounded-full hover:bg-red-700 focus:outline-none focus:shadow-outline"
                       type="submit"
-                      to={"/changepassword"}
+                      // to={"/changepassword"}
                     >
                       Send Verification Mail
                     </button>

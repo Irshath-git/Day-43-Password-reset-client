@@ -5,11 +5,11 @@ function ChangePassword() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleForgotPassword = async (e, userId, token) => {
+  const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://localhost:4000/api/password-reset/:${userId}/:${token}`,
+        `https://localhost:4000/api/password-reset/:userId/:token`,
         {
           password,
         }
