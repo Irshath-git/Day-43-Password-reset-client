@@ -6,7 +6,6 @@ function ChangePassword() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const {userId,token} = useParams();
-  console.log(params)
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
