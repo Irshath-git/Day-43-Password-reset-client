@@ -9,7 +9,7 @@ function ChangePassword() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://https://password-reset-p5hw.onrender.com/api/password-reset/:userId/:token`,
+        `http://localhost:4000/api/password-reset/:userId/:token`,
         {
           password,
         }
