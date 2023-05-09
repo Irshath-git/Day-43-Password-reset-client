@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 function ChangePassword() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-
+  const {userId,token} = useParams();
+  console.log(params)
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://password-reset-new-l7ss.onrender.com/api/password-reset/:userId/:token`,
+        `https://password-reset-new-l7ss.onrender.com/api/password-reset/${userId}/${token}`,
         {
           password,
         }
